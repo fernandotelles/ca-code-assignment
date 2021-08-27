@@ -9,6 +9,8 @@ djangorestframework = "*"
 
 [dev-packages]
 django-extensions = "*"
+pytest = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.8"
