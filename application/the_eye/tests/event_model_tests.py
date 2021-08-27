@@ -10,10 +10,10 @@ class EventModelTestCase(TransactionTestCase):
         """ Tests the event model creation"""
 
         self.event = Event(
-            session_id=uuid.uuid4(),
+            session_id = uuid.uuid4(),
             category = "page interaction",
-            name="pageview",
-            data = {},
+            name = "pageview",
+            data = {"host": "www.ahost.com", "path": "/"},
             timestamp = "2021-07-27 04:43:10.243860"
         )
 
