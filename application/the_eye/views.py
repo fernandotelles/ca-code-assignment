@@ -6,6 +6,7 @@ from the_eye.serializers import EventSerializer
 
 # Create your views here.
 
+
 class EventViewSet(viewsets.ModelViewSet):
 
     queryset = Event.objects.select_for_update().all().order_by("-timestamp")

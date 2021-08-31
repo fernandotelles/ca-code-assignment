@@ -7,13 +7,14 @@ from rest_framework.test import APITransactionTestCase
 
 from the_eye.models import Event
 
+
 class EventViewSetTests(APITransactionTestCase):
-    """ Test suite for testing Event API """
+    """Test suite for testing Event API"""
 
     def test_create_event(self):
-        """ Ensures Event Creation """
+        """Ensures Event Creation"""
 
-        url = reverse('event-list')
+        url = reverse("event-list")
         body = {
             "session_id": "10e9932e-3c7e-4716-bb69-c8005d1b9661",
             "category": "page interaction",
